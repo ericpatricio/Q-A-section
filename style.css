@@ -1,0 +1,91 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:ital@1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: capitalize;
+  color: #010713;    
+}
+
+.title {
+  margin: 15vh 0 3rem 0;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: #010713;
+  text-align: center;
+}
+
+.section-center {  
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.question {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px #010713;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1.5rem;  
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;  
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #010713;
+  margin-left: 2rem;  
+  outline: none;
+}
+
+.question-btn:hover {
+  transform: rotate(45deg);
+}
+
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(1,7,19,0.3);
+  font-size: 1rem;  
+}
+
+/* JS Hide text  */
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;  
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
